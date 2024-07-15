@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Video Listing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .video-card {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .video-thumbnail {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .video-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .video-details {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="video-card">
+      <img src="video-thumbnail-1.jpg" alt="Video Thumbnail 1" class="video-thumbnail">
+      <div class="video-info">
+        <div class="video-title">How to Learn Python from Scratch</div>
+        <div class="video-details">2.1 mil visualizações • Transmitido há 2 dias</div>
+      </div>
+    </div>
+    <div class="video-card">
+      <img src="video-thumbnail-2.jpg" alt="Video Thumbnail 2" class="video-thumbnail">
+      <div class="video-info">
+        <div class="video-title">Project Planning: A Comprehensive Guide</div>
+        <div class="video-details">2.1 mil visualizações • Transmitido há 2 dias</div>
+      </div>
+    </div>
+    <div class="video-card">
+      <img src="video-thumbnail-3.jpg" alt="Video Thumbnail 3" class="video-thumbnail">
+      <div class="video-info">
+        <div class="video-title">EY Fast Track: Specialist Machine Learning</div>
+        <div class="video-details">1.7 mil visualizações • Transmitido há 4 dias</div>
+      </div>
+    </div>
+    <div class="video-card">
+      <img src="video-thumbnail-4.jpg" alt="Video Thumbnail 4" class="video-thumbnail">
+      <div class="video-info">
+        <div class="video-title">Scrum Talks: Embrace Agile Transformation</div>
+        <div class="video-details">1.6 mil visualizações • Transmitido há 3 dias</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
